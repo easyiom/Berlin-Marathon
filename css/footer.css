@@ -1,27 +1,9 @@
-.content21 {
-    position: relative;
-    margin: 130px auto;
-    text-align: center;
-    padding: 0 20px;
-}
-
-.content21 .text {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #202020;
-}
-
-.content21 .p {
-    font-size: 2.1875rem;
-    font-weight: 600;
-    color: #202020;
-}
-
 footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
     background: #111;
+    color: white;
 }
 
 .main-content {
@@ -44,7 +26,7 @@ footer {
     position: relative;
 }
 
-.box .content2:before {
+.box .content:before {
     position: absolute;
     content: '';
     top: -10px;
@@ -53,12 +35,12 @@ footer {
     background: #1a1a1a;
 }
 
-.box .content2:after {
+.box .content:after {
     position: absolute;
     content: '';
     height: 2px;
     width: 15%;
-    background: #f12020;
+    background: #007bff;
     top: -10px;
 }
 
@@ -86,7 +68,7 @@ footer {
 }
 
 .left .content2 .social a span:hover {
-    background: #f12020;
+    background: #007bff;
 }
 
 .center .content2 .fas {
@@ -102,7 +84,7 @@ footer {
 }
 
 .center .content2 .fas:hover {
-    background: #f12020;
+    background: #007bff;
 }
 
 .center .content2 .text {
@@ -111,7 +93,7 @@ footer {
     padding-left: 10px;
 }
 
-.center .content2 .phone {
+.center .content2 .telf {
     margin: 15px 0;
 }
 
@@ -152,7 +134,7 @@ footer {
     width: 100%;
     border: none;
     outline: none;
-    background: #f12020;
+    background: #007bff;
     font-size: 1.0625rem;
     font-weight: 500;
     cursor: pointer;
@@ -170,11 +152,11 @@ footer {
 }
 
 .bottom center span {
-    color: #656565;
+    color: white;
 }
 
 .bottom center a {
-    color: #f12020;
+    color: #007bff;
     text-decoration: none;
 }
 
