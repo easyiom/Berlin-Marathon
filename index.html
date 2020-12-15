@@ -70,7 +70,87 @@
                 <div class="cuadro2">
                     <h1>Berlin-Marathon</h1>
                 </div>
+
             </div>
+            <!--Cuenta atras-->
+
+            <div class="wrapper">
+                <div class="count-down">
+                    <div class="timer day">
+                        <div class="count">
+                            <div class="numb">
+                                00</div>
+                            <div class="text">
+                                Dias</div>
+                        </div>
+                    </div>
+                    <div class="clone">
+                        :</div>
+                    <div class="timer hour">
+                        <div class="count">
+                            <div class="numb">
+                                00</div>
+                            <div class="text">
+                                Horas</div>
+                        </div>
+                    </div>
+                    <div class="clone">
+                        :</div>
+                    <div class="timer min">
+                        <div class="count">
+                            <div class="numb">
+                                00</div>
+                            <div class="text">
+                                Minutos</div>
+                        </div>
+                    </div>
+                    <div class="clone">
+                        :</div>
+                    <div class="timer sec">
+                        <div class="count">
+                            <div class="numb">
+                                00</div>
+                            <div class="text">
+                                Segundos</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                const day = document.querySelector(".day .numb");
+                const hour = document.querySelector(".hour .numb");
+                const min = document.querySelector(".min .numb");
+                const sec = document.querySelector(".sec .numb");
+                var timer = setInterval(() => {
+                    var currentDate = new Date().getTime();
+                    var launchDate = new Date('Sep 15, 2021 13:00:00').getTime();
+                    var duration = launchDate - currentDate;
+                    var days = Math.floor(duration / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((duration % (1000 * 60)) / 1000);
+                    day.innerHTML = days;
+                    hour.innerHTML = hours;
+                    min.innerHTML = minutes;
+                    sec.innerHTML = seconds;
+                    if (days < 10) {
+                        day.innerHTML = '0' + days;
+                    }
+                    if (hours < 10) {
+                        hour.innerHTML = '0' + hours;
+                    }
+                    if (minutes < 10) {
+                        min.innerHTML = '0' + minutes;
+                    }
+                    if (seconds < 10) {
+                        sec.innerHTML = '0' + seconds;
+                    }
+                    if (duration < 0) {
+                        clearInterval(timer);
+                    }
+                }, 1000);
+            </script>
+            <!--Cuenta atras-->
         </header>
         <!--Header-->
         <!--Tabla-->
@@ -129,90 +209,16 @@
             </table>
         </div>
         <!--Tabla-->
-        <!--Cuenta atras-->
-        <div class="wrapper">
-            <div class="count-down">
-                <div class="timer day">
-                    <div class="count">
-                        <div class="numb">
-                            00</div>
-                        <div class="text">
-                            Dias</div>
-                    </div>
-                </div>
-                <div class="clone">
-                    :</div>
-                <div class="timer hour">
-                    <div class="count">
-                        <div class="numb">
-                            00</div>
-                        <div class="text">
-                            Horas</div>
-                    </div>
-                </div>
-                <div class="clone">
-                    :</div>
-                <div class="timer min">
-                    <div class="count">
-                        <div class="numb">
-                            00</div>
-                        <div class="text">
-                            Minutos</div>
-                    </div>
-                </div>
-                <div class="clone">
-                    :</div>
-                <div class="timer sec">
-                    <div class="count">
-                        <div class="numb">
-                            00</div>
-                        <div class="text">
-                            Segundos</div>
-                    </div>
-                </div>
-            </div>
+
+        <div>
+            <iframe src="https://discord.com/widget?id=770437618286592000&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
-        <script>
-            const day = document.querySelector(".day .numb");
-            const hour = document.querySelector(".hour .numb");
-            const min = document.querySelector(".min .numb");
-            const sec = document.querySelector(".sec .numb");
-            var timer = setInterval(() => {
-                var currentDate = new Date().getTime();
-                var launchDate = new Date('Sep 15, 2021 13:00:00').getTime();
-                var duration = launchDate - currentDate;
-                var days = Math.floor(duration / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((duration % (1000 * 60)) / 1000);
-                day.innerHTML = days;
-                hour.innerHTML = hours;
-                min.innerHTML = minutes;
-                sec.innerHTML = seconds;
-                if (days < 10) {
-                    day.innerHTML = '0' + days;
-                }
-                if (hours < 10) {
-                    hour.innerHTML = '0' + hours;
-                }
-                if (minutes < 10) {
-                    min.innerHTML = '0' + minutes;
-                }
-                if (seconds < 10) {
-                    sec.innerHTML = '0' + seconds;
-                }
-                if (duration < 0) {
-                    clearInterval(timer);
-                }
-            }, 1000);
-        </script>
-        <!--Cuenta atras-->
-        <iframe src="https://discord.com/widget?id=770437618286592000&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         <div class="two-column">
             <iframe width="956" height="538" src="https://www.youtube.com/embed/LKfQrTm7SrA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1KdGXejamdeby2P74KnEHJs2VbMk" width="640" height="480"></iframe>
-
+        <div>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1KdGXejamdeby2P74KnEHJs2VbMk" width="640" height="480"></iframe>
+        </div>
 
         <footer>
             <div class="main-content">

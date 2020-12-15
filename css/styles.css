@@ -45,7 +45,7 @@ header {
 .cuadro1 {
     padding: 4vw;
     z-index: 15;
-    background-color: rgba(9, 69, 199, 0.267);
+    background-color: rgba(9, 69, 199, 0.363);
 }
 
 .cuadro2 {
@@ -188,6 +188,7 @@ body {
     max-width: 900px;
     text-align: center;
     padding: 0 50px;
+    background-color: rgba(9, 69, 199, 0.363);
 }
 
 .wrapper .count-down {
