@@ -1,8 +1,8 @@
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0px;
     width: 100%;
-    background: #111;
+    background: rgba(32, 47, 61, 0.952);
     color: white;
 }
 
@@ -26,7 +26,7 @@ footer {
     position: relative;
 }
 
-.box .content:before {
+.box .content2:before {
     position: absolute;
     content: '';
     top: -10px;
@@ -35,7 +35,7 @@ footer {
     background: #1a1a1a;
 }
 
-.box .content:after {
+.box .content2:after {
     position: absolute;
     content: '';
     height: 2px;
@@ -93,7 +93,7 @@ footer {
     padding-left: 10px;
 }
 
-.center .content2 .telf {
+.center .content2 .phone {
     margin: 15px 0;
 }
 
@@ -152,7 +152,7 @@ footer {
 }
 
 .bottom center span {
-    color: white;
+    color: #656565;
 }
 
 .bottom center a {
