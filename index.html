@@ -43,25 +43,7 @@
 
 
 
-        <script>
-            const body = document.querySelector("body");
-            const navbar = document.querySelector(".navbar");
-            const menuBtn = document.querySelector(".menu-btn");
-            const cancelBtn = document.querySelector(".cancel-btn");
-            menuBtn.onclick = () => {
-                navbar.classList.add("show");
-                menuBtn.classList.add("hide");
-                body.classList.add("disabled");
-            }
-            cancelBtn.onclick = () => {
-                body.classList.remove("disabled");
-                navbar.classList.remove("show");
-                menuBtn.classList.remove("hide");
-            }
-            window.onscroll = () => {
-                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-            }
-        </script>
+        <script src="js/menu.js"></script>
 
 
         <!--Header-->
@@ -116,46 +98,13 @@
                     </div>
                 </div>
             </div>
-            <script>
-                const day = document.querySelector(".day .numb");
-                const hour = document.querySelector(".hour .numb");
-                const min = document.querySelector(".min .numb");
-                const sec = document.querySelector(".sec .numb");
-                var timer = setInterval(() => {
-                    var currentDate = new Date().getTime();
-                    var launchDate = new Date('Sep 15, 2021 13:00:00').getTime();
-                    var duration = launchDate - currentDate;
-                    var days = Math.floor(duration / (1000 * 60 * 60 * 24));
-                    var hours = Math.floor((duration % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    var minutes = Math.floor((duration % (1000 * 60 * 60)) / (1000 * 60));
-                    var seconds = Math.floor((duration % (1000 * 60)) / 1000);
-                    day.innerHTML = days;
-                    hour.innerHTML = hours;
-                    min.innerHTML = minutes;
-                    sec.innerHTML = seconds;
-                    if (days < 10) {
-                        day.innerHTML = '0' + days;
-                    }
-                    if (hours < 10) {
-                        hour.innerHTML = '0' + hours;
-                    }
-                    if (minutes < 10) {
-                        min.innerHTML = '0' + minutes;
-                    }
-                    if (seconds < 10) {
-                        sec.innerHTML = '0' + seconds;
-                    }
-                    if (duration < 0) {
-                        clearInterval(timer);
-                    }
-                }, 1000);
-            </script>
+            <script src="js/contador.js"></script>
             <!--Cuenta atras-->
         </header>
         <!--Header-->
         <!--Tabla-->
         <div class="tabla">
-            <h1>Record</h1>
+            <h1>Records Absolutos de la maratón</h1>
             <table class="rwd-table">
                 <tr>
                     <th>AÑO</th>
@@ -210,7 +159,7 @@
         </div>
         <!--Tabla-->
 
-        <div>
+        <div class="discord">
             <iframe src="https://discord.com/widget?id=770437618286592000&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
         <div class="two-column">
