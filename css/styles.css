@@ -308,6 +308,14 @@ iframe {
 
 /*descarga*/
 
+#descarga {
+    padding: 5%;
+}
+
+#botondow {
+    padding: 3%;
+}
+
 button {
     position: relative;
     height: 65px;
@@ -366,6 +374,10 @@ button:hover:first-child {
     padding: 2%;
 }
 
+.two-column p {
+    padding: 2.5%;
+}
+
 .three-column {
     width: 33.33%;
     float: left;
@@ -379,5 +391,8 @@ button:hover:first-child {
 @media screen and (max-width:700px) {
     .two-column {
         width: 100%;
+    }
+    .two-column p {
+        padding: 5%;
     }
     /*clases e id para columnas*/

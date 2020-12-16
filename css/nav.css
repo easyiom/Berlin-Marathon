@@ -125,7 +125,8 @@
         display: block;
         padding: 40px 0;
         text-align: center;
-        background: rgb(32, 47, 61);
+        background: rgba(26, 39, 51, 0.904);
+        ;
         transition: all 0.3s ease;
     }
     .navbar.show .menu-list {

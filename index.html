@@ -25,18 +25,20 @@
     <nav class="navbar">
         <div class="content">
             <div class="logo">
-                <a href="#">Berlin-Marathon</a>
+                <a href="inicio">Berlin-Marathon</a>
             </div>
+
             <ul class="menu-list">
                 <div class="icon cancel-btn">
                     <i class="fas fa-times"></i>
                 </div>
-                <li><a href="#">Inicio</a></li>
+                <li><a href=#inicio>Inicio</a></li>
                 <li><a href="#">Sobre la Maraton</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href=#records>Tabla de records</a></li>
+                <li><a href=#descarga>Tips</a></li>
+                <li><a href=#discord>Comunidad</a></li>
             </ul>
+
             <div class="icon menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
@@ -46,7 +48,7 @@
     <!--barra de navegación-->
 
     <!--Header-->
-    <header>
+    <header id="inicio">
         <div class="cuadro1">
             <div class="cuadro2">
                 <h1>Berlin-Marathon</h1>
@@ -102,7 +104,7 @@
     </header>
     <!--Header-->
     <!--Tabla-->
-    <div class="tabla">
+    <div id="records" class="tabla">
         <h1>Records Absolutos de la maratón</h1>
         <table class="rwd-table">
             <tr>
@@ -160,8 +162,9 @@
 
     <!--descarga-->
     <div id="descarga">
-        <a href="/Berlin-Marathon/media/Infografía.pdf" download>
-            <div>
+        <h2>Tips para el evento</h2>
+        <a href="/Berlin-Marathon/media/Infografía.pdf">
+            <div href="/Berlin-Marathon/media/Infografía.pdf" download id="botondow">
                 <button>Descarga</button>
             </div>
         </a>
@@ -199,10 +202,13 @@
             </h2>
             <p>
                 Hasta el kilómetro 31 aproximadamente, las variaciones en el trazado son casi imperceptibles, resultando una carrera bastante llana y rápida para los para los atletas participantes. Es entre los kilómetros 32 y 36 cuando las inclinaciones en el asfalto
-                hacen acto de presencia, aunque son poco reseñables. Las subidas apenas se notan en las piernas y las bajadas se agradecen bastante a estas alturas de carrera. Ya en el kilómetro 37 los corredores enfilan una calle relativamente ancha
-                y con una leve pendiente hacia abajo, llamada Hohenzollerndamm. A medida que los atletas van aproximándose al kilómetro 42, el circuito se vuelve más angosto, fundamentalmente en los dos últimos kilómetros. El último giro hacia la izquierda
-                da paso a la imponente Puerta de Brandenburgo, el lugar más emblemático de la ciudad berlinesa y a escasos metros de la línea de meta. Por otra parte, es de agradecer que en casi ningún punto del circuito se producen cuellos de botella,
-                permitiendo a los atletas correr a su aire, sin aglomeraciones, casi desde el inicio de la prueba hasta el final, pese a la gran afluencia de participantes.
+                hacen acto de presencia, aunque son poco reseñables. Las subidas apenas se notan en las piernas y las bajadas se agradecen bastante a estas alturas de carrera.
+            </p>
+            <p> Ya en el kilómetro 37 los corredores enfilan una calle relativamente ancha y con una leve pendiente hacia abajo, llamada Hohenzollerndamm. A medida que los atletas van aproximándose al kilómetro 42, el circuito se vuelve más angosto, fundamentalmente
+                en los dos últimos kilómetros. El último giro hacia la izquierda da paso a la imponente Puerta de Brandenburgo, el lugar más emblemático de la ciudad berlinesa y a escasos metros de la línea de meta.
+            </p>
+            <p> Por otra parte, es de agradecer que en casi ningún punto del circuito se producen cuellos de botella, permitiendo a los atletas correr a su aire, sin aglomeraciones, casi desde el inicio de la prueba hasta el final, pese a la gran afluencia
+                de participantes.
             </p>
         </div>
         <div class="two-column">
