@@ -129,7 +129,7 @@ footer {
     margin-top: 10px;
 }
 
-.right form .btn button {
+.right form .btn button #botonf {
     height: 40px;
     width: 100%;
     border: none;
@@ -141,7 +141,7 @@ footer {
     transition: .3s;
 }
 
-.right form .btn button:hover {
+.right form .btn button:hover #botonf {
     background: #000;
 }
 

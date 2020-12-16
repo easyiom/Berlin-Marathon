@@ -1,306 +1,383 @@
-        @import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700';
     * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    body {
-        margin: 0%;
-        font-family: 'Montserrat', sans-serif;
-    }
-    /* Clear floats after the columns */
-    
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    
-    body {
-        background-color: #031321;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-    }
-    /*header*/
-    
-    header {
-        background-image: url('/Berlin-Marathon/img/fondo1-berlin.png');
-        background-size: cover;
-        min-height: 100%;
-        height: 100vh;
-        width: 100vw;
-        background-position: center;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    .cuadro1 {
-        padding: 4vw;
-        z-index: 15;
-        background-color: rgba(9, 69, 199, 0.363);
-    }
-    
-    .cuadro2 {
-        z-index: 25;
-        background-color: rgba(9, 69, 199, 0.589);
-        padding: 4vw;
-    }
-    
-    header h1 {
-        z-index: 50;
-        color: rgb(34, 195, 216);
-        font-size: 10vw;
-        background-color: rgba(9, 69, 199, 0.76);
-        width: 100%;
-        padding: 10px;
-        font-weight: 800;
-    }
-    /*header*/
-    /*tabla*/
-    
-    .rwd-table {
-        margin: 1em 0;
-        min-width: 300px;
-    }
-    
-    .rwd-table tr {
-        border-top: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
-    }
-    
-    .rwd-table th {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700';
+body {
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-color: #031321;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*header*/
+
+header {
+    background-image: url('/Berlin-Marathon/img/fondo1-berlin.png');
+    background-size: cover;
+    min-height: 100%;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cuadro1 {
+    padding: 4vw;
+    z-index: 15;
+    background-color: rgba(9, 69, 199, 0.363);
+}
+
+.cuadro2 {
+    z-index: 25;
+    background-color: rgba(9, 69, 199, 0.589);
+    padding: 4vw;
+}
+
+header h1 {
+    z-index: 50;
+    color: rgb(34, 195, 216);
+    font-size: 10vw;
+    background-color: rgba(9, 69, 199, 0.76);
+    width: 100%;
+    padding: 10px;
+    font-weight: 800;
+}
+
+
+/*header*/
+
+
+/*tabla*/
+
+.rwd-table {
+    margin: 1em 0;
+    min-width: 300px;
+}
+
+.rwd-table tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.rwd-table th {
+    display: none;
+}
+
+.rwd-table td {
+    display: block;
+}
+
+.rwd-table td:first-child {
+    padding-top: 0.5em;
+}
+
+.rwd-table td:last-child {
+    padding-bottom: 0.5em;
+}
+
+.rwd-table td:before {
+    content: attr(data-th) ": ";
+    font-weight: bold;
+    width: 6.5em;
+    display: inline-block;
+}
+
+@media (min-width: 480px) {
+    .rwd-table td:before {
         display: none;
     }
-    
+}
+
+.rwd-table th,
+.rwd-table td {
+    text-align: left;
+}
+
+@media (min-width: 480px) {
+    .rwd-table th,
     .rwd-table td {
-        display: block;
+        display: table-cell;
+        padding: 0.25em 0.5em;
     }
-    
+    .rwd-table th:first-child,
     .rwd-table td:first-child {
-        padding-top: 0.5em;
+        padding-left: 0;
     }
-    
+    .rwd-table th:last-child,
     .rwd-table td:last-child {
-        padding-bottom: 0.5em;
+        padding-right: 0;
     }
-    
-    .rwd-table td:before {
-        content: attr(data-th) ": ";
-        font-weight: bold;
-        width: 6.5em;
-        display: inline-block;
-    }
-    
-    @media (min-width: 480px) {
-        .rwd-table td:before {
-            display: none;
-        }
-    }
-    
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: #444;
+    background: #eee;
+}
+
+.tabla {
+    padding: 10vw;
+    background: rgb(11, 25, 39);
+}
+
+.tabla h1 {
+    font-weight: normal;
+    letter-spacing: -1px;
+    color: #507091;
+}
+
+.rwd-table {
+    background: rgba(52, 73, 94, 0.952);
+    color: #fff;
+    border-radius: 0.4em;
+    overflow: hidden;
+}
+
+.rwd-table tr {
+    border-color: #46637f;
+}
+
+.rwd-table th,
+.rwd-table td {
+    margin: 0.5em 1em;
+}
+
+@media (min-width: 480px) {
     .rwd-table th,
     .rwd-table td {
-        text-align: left;
+        padding: 1em !important;
     }
-    
-    @media (min-width: 480px) {
-        .rwd-table th,
-        .rwd-table td {
-            display: table-cell;
-            padding: 0.25em 0.5em;
-        }
-        .rwd-table th:first-child,
-        .rwd-table td:first-child {
-            padding-left: 0;
-        }
-        .rwd-table th:last-child,
-        .rwd-table td:last-child {
-            padding-right: 0;
-        }
-    }
-    
-    body {
-        font-family: Montserrat, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        text-rendering: optimizeLegibility;
-        color: #444;
-        background: #eee;
-    }
-    
-    .tabla {
-        padding: 10vw;
-        background: rgb(11, 25, 39);
-    }
-    
-    .tabla h1 {
-        font-weight: normal;
-        letter-spacing: -1px;
-        color: #507091;
-    }
-    
-    .rwd-table {
-        background: rgba(52, 73, 94, 0.952);
-        color: #fff;
-        border-radius: 0.4em;
-        overflow: hidden;
-    }
-    
-    .rwd-table tr {
-        border-color: #46637f;
-    }
-    
-    .rwd-table th,
-    .rwd-table td {
-        margin: 0.5em 1em;
-    }
-    
-    @media (min-width: 480px) {
-        .rwd-table th,
-        .rwd-table td {
-            padding: 1em !important;
-        }
-    }
-    
-    .rwd-table th,
-    .rwd-table td:before {
-        color: #dd5;
-    }
-    /*tabla*/
-    /*cuenta atras*/
-    
-    ::selection {
-        color: #fff;
-        background: #FC4782;
-    }
-    
-    .wrapper {
-        color: #fff;
-        max-width: 900px;
-        text-align: center;
-        padding: 0 50px;
-        background-color: rgba(9, 69, 199, 0.363);
-    }
-    
+}
+
+.rwd-table th,
+.rwd-table td:before {
+    color: #dd5;
+}
+
+
+/*tabla*/
+
+
+/*cuenta atras*/
+
+ ::selection {
+    color: #fff;
+}
+
+.wrapper {
+    color: #fff;
+    max-width: 900px;
+    text-align: center;
+    padding: 0 50px;
+    background-color: rgba(9, 69, 199, 0.363);
+}
+
+.wrapper .count-down {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.wrapper .count-down .timer {
+    height: 100%;
+    width: 100px;
+    border: 2px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.count-down .timer .numb {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.count-down .timer .text {
+    font-size: 15px;
+}
+
+.count-down .clone {
+    font-size: 45px;
+}
+
+@media (max-width: 630px) {
     .wrapper .count-down {
-        display: flex;
-        width: 100%;
-        height: 100px;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
+        height: 80px;
     }
-    
     .wrapper .count-down .timer {
-        height: 100%;
-        width: 100px;
-        border: 2px solid;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 80px;
     }
-    
     .count-down .timer .numb {
-        font-size: 25px;
-        font-weight: 500;
+        font-size: 20px;
     }
-    
+    .count-down .timer .text {
+        font-size: 13px;
+    }
+    .count-down .clone {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 542px) {
+    .wrapper {
+        padding: 0 20px;
+    }
+    .wrapper .count-down .timer {
+        border: none;
+    }
+    .count-down .timer .numb {
+        font-size: 28px;
+    }
     .count-down .timer .text {
         font-size: 15px;
     }
-    
     .count-down .clone {
-        font-size: 45px;
+        display: none;
     }
-    
-    @media (max-width: 630px) {
-        .wrapper .count-down {
-            height: 80px;
-        }
-        .wrapper .count-down .timer {
-            width: 80px;
-        }
-        .count-down .timer .numb {
-            font-size: 20px;
-        }
-        .count-down .timer .text {
-            font-size: 13px;
-        }
-        .count-down .clone {
-            font-size: 40px;
-        }
+}
+
+@media (max-width: 340px) {
+    .wrapper .count-down {
+        height: 30px;
     }
-    
-    @media (max-width: 542px) {
-        .wrapper {
-            padding: 0 20px;
-        }
-        .wrapper .count-down .timer {
-            border: none;
-        }
-        .count-down .timer .numb {
-            font-size: 28px;
-        }
-        .count-down .timer .text {
-            font-size: 15px;
-        }
-        .count-down .clone {
-            display: none;
-        }
+    .wrapper .count-down .timer {
+        width: 30px;
     }
-    
-    @media (max-width: 340px) {
-        .wrapper .count-down {
-            height: 30px;
-        }
-        .wrapper .count-down .timer {
-            width: 30px;
-        }
-    }
-    /*cuenta atras*/
-    /*videos*/
-    
-    iframe {
-        width: 100%;
-    }
-    /*videos*/
-    /*discord*/
-    
-    #discord {
-        width: 100%;
-    }
-    /*discord*/
-    /*clases e id para columnas*/
-    
-    .one-column {
-        width: 100%;
-        float: left;
-    }
-    
+}
+
+
+/*cuenta atras*/
+
+iframe {
+    width: 100vw;
+}
+
+
+/*videos*/
+
+iframe {
+    width: 100%;
+}
+
+
+/*videos*/
+
+
+/*discord*/
+
+#discord {
+    width: 100%;
+}
+
+
+/*discord*/
+
+
+/*fondos*/
+
+
+/*fondos*/
+
+
+/*descarga*/
+
+button {
+    position: relative;
+    height: 65px;
+    width: 210px;
+    margin: 0 40px;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+    background: rgba(32, 47, 61, 0.952);
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+button:first-child {
+    color: #007bff;
+    border-color: #007bff;
+    ;
+}
+
+button:before,
+button:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    filter: blur(30px);
+    opacity: 0.4;
+    transition: 0.6s;
+}
+
+button:hover:first-child {
+    background: rgba(32, 47, 61, 0.952);
+    color: black;
+}
+
+
+/*descarga*/
+
+
+/*clases e id para columnas*/
+
+.one-column {
+    width: 100%;
+    float: left;
+}
+
+.two-column {
+    width: 50%;
+    float: left;
+    padding: 2%;
+}
+
+.three-column {
+    width: 33.33%;
+    float: left;
+}
+
+.four-column {
+    width: 25%;
+    float: left;
+}
+
+@media screen and (max-width:700px) {
     .two-column {
-        width: 50%;
-        float: left;
-        padding: 2%;
+        width: 100%;
     }
-    
-    .three-column {
-        width: 33.33%;
-        float: left;
-    }
-    
-    .four-column {
-        width: 25%;
-        float: left;
-    }
-    
-    @media screen and (max-width:700px) {
-        .two-column {
-            width: 100%;
-        }
-        /*clases e id para columnas*/
+    /*clases e id para columnas*/
