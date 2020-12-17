@@ -57,11 +57,19 @@ header {
 header h1 {
     z-index: 50;
     color: rgb(34, 195, 216);
-    font-size: 10vw;
+    font-size: 5vw;
     background-color: rgba(9, 69, 199, 0.76);
     width: 100%;
     padding: 10px;
     font-weight: 800;
+}
+
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 10vw;
+        padding: 10px;
+        font-weight: 800;
+    }
 }
 
 
@@ -227,7 +235,7 @@ body {
     font-size: 45px;
 }
 
-@media (max-width: 630px) {
+@media (max-width: 900px) {
     .wrapper .count-down {
         height: 80px;
     }
@@ -245,7 +253,7 @@ body {
     }
 }
 
-@media (max-width: 542px) {
+@media (max-width: 900px) {
     .wrapper {
         padding: 0 20px;
     }
