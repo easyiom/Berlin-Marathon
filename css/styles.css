@@ -419,9 +419,12 @@ button:hover:first-child {
     .discord img {
         display: none;
     }
+    #youtube img {
+        display: none;
+    }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     #youtube img {
         display: block;
         width: 45vw;
