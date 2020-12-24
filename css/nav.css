@@ -149,4 +149,7 @@
     .navbar .logo a {
         font-size: 20px;
     }
+    .navbar {
+        padding: 15px 0;
+    }
 }

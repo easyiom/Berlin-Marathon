@@ -7,7 +7,6 @@
 
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700';
 body {
-    margin: 0%;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -168,7 +167,7 @@ body {
 @media (min-width: 480px) {
     .rwd-table th,
     .rwd-table td {
-        padding: 1em !important;
+        padding: 2vw !important;
     }
 }
 
@@ -426,9 +425,12 @@ button:hover:first-child {
         padding-top: 10vw;
     }
     header h1 {
-        font-size: 7vw;
-        padding: 10px;
+        font-size: 6.5vw;
+        padding: 11px;
         font-weight: 800;
+    }
+    .maspaddingheader {
+        padding: 3px;
     }
 }
 
